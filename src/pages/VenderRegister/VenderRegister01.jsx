@@ -47,7 +47,6 @@ const VenderRegister01 = () => {
       <VenderNav />
       <section className={styles.businessRegistration}>
         <div className={styles.title}>사업자 등록</div>
-
         <div className={styles.formWrapper}>
           <div className={styles.radioGroup}>
             <div className={styles.radioItem}>
@@ -87,7 +86,7 @@ const VenderRegister01 = () => {
           <FormRow>
             <div className={styles.flex}>
               <label className={styles.attachLabel} htmlFor="identity-upload">
-                사업자번호
+                {selectedType === "사업자" ? "사업자 번호" : "주민등록번호"}
               </label>
               <input type="text" />
             </div>
