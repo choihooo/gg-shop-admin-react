@@ -5,8 +5,36 @@ import RegisterDropdown from "./RegisterDropdown";
 
 const FormRow = ({ children }) => <div className={styles.row}>{children}</div>;
 
+const FileInputWithStyle = ({ label, placeholder, value, setValue }) => {
+  return (
+    <div className={styles.attachItem}>
+      <label className={styles.attachLabel}>{label}</label>
+      <div className={styles.fileUpload}>
+        <input
+          type="file"
+          className={styles.fileInput}
+          onChange={(e) => setValue(e.target.files[0]?.name || "")}
+        />
+        <span
+          className={styles.fileNameUploaded}
+          style={{
+            color: `${value ? "#0000ff" : "#757575"}`,
+          }}
+        >
+          {value || placeholder}
+        </span>
+        <button className={styles.modalButtonSmall}>수정</button>
+      </div>
+    </div>
+  );
+};
+
 const VenderRegister02 = () => {
   const [selectedType, setSelectedType] = useState("사업자");
+  const [identityFile, setIdentityFile] = useState("");
+  const [businessFile, setBusinessFile] = useState("");
+  const [bankFile, setBankFile] = useState("");
+
   const handleDropdownChange = (value) => {
     console.log("Selected Value:", value);
   };
@@ -18,7 +46,7 @@ const VenderRegister02 = () => {
     <div className={styles.registerWrapper}>
       <VenderNav />
       <section className={styles.businessRegistration}>
-        <div className={styles.title}>사업자 등록</div>
+        <div className={styles.title}>총판 등록</div>
 
         <div className={styles.formWrapper}>
           <div className={styles.radioGroup}>
@@ -128,18 +156,23 @@ const VenderRegister02 = () => {
               <label className={styles.attachLabel} htmlFor="identity-upload">
                 상위 사업자
               </label>
-              <input type="text" />
+              <RegisterDropdown
+                options={["상위 사업자"]}
+                defaultLabel="상위 사업자"
+                onChange={handleDropdownChange}
+                defaultWidth="300px"
+              />
             </div>
             <div className={styles.flex}>
-              <div>색상코드</div>
-              <input type="text" />
+              <div style={{ marginRight: "50px" }}>사업자 수수료</div>
+              <div>3.05%</div>
             </div>
           </FormRow>
 
           <FormRow>
             <div className={`${styles.flex} ${styles.fee}`}>
               <label className={styles.attachLabel} htmlFor="identity-upload">
-                사업자수수료
+                총판수수료
               </label>
               <input type="text" />
             </div>
@@ -165,59 +198,29 @@ const VenderRegister02 = () => {
         <div className={styles.dottedLine}></div>
         <div className={styles.attach}>
           <div className={styles.attachWrapper}>
-            <div className={styles.attachItem}>
-              <label className={styles.attachLabel} htmlFor="identity-upload">
-                신분증
-              </label>
-              <div className={styles.fileUpload}>
-                <input
-                  type="file"
-                  id="identity-upload"
-                  className={styles.fileInput}
-                />
-                <span id="identity-file" className={styles.fileNameUploaded}>
-                  신분증.png
-                </span>
-                <button className={styles.modalButtonSmall}>수정</button>
-              </div>
-            </div>
+            <FileInputWithStyle
+              label="신분증"
+              placeholder="신분증을 첨부해 주세요."
+              value={identityFile}
+              setValue={setIdentityFile}
+            />
 
             {selectedType === "사업자" && (
-              <div className={styles.attachItem}>
-                <label className={styles.attachLabel} htmlFor="business-upload">
-                  사업자 등록증
-                </label>
-                <div className={styles.fileUpload}>
-                  <input
-                    type="file"
-                    id="business-upload"
-                    className={styles.fileInput}
-                  />
-                  <span id="business-file" className={styles.fileNameUploaded}>
-                    사업자 등록증.png
-                  </span>
-                  <button className={styles.modalButtonSmall}>수정</button>
-                </div>
-              </div>
+              <FileInputWithStyle
+                label="사업자 등록증"
+                placeholder="사업자 등록증을 첨부해 주세요."
+                value={businessFile}
+                setValue={setBusinessFile}
+              />
             )}
 
-            <div className={styles.attachItem}>
-              <label className={styles.attachLabel} htmlFor="bank-upload">
-                통장 사본
-              </label>
-              <div className={styles.fileUpload}>
-                <input
-                  type="file"
-                  id="bank-upload"
-                  className={styles.fileInput}
-                />
-                <span id="bank-file" className={styles.fileNameUploaded}>
-                  통장 사본.png
-                </span>
-                <button className={styles.modalButtonSmall}>수정</button>
-              </div>
-            </div>
-            <button className={styles.submitButton}>사업자 등록</button>
+            <FileInputWithStyle
+              label="통장 사본"
+              placeholder="통장 사본을 첨부해 주세요."
+              value={bankFile}
+              setValue={setBankFile}
+            />
+            <button className={styles.submitButton}>총판 등록</button>
           </div>
         </div>
       </section>

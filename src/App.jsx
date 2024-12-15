@@ -11,8 +11,11 @@ import {
 } from "./pages/Settlement";
 import PayList from "./pages/PayList/PayList";
 import WaitApproval from "./pages/WaitApproval/WaitApproval";
-import VenderRegister01 from "./pages/VenderRegister/VenderRegister01";
-import VenderRegister02 from "./pages/VenderRegister/VenderRegister02";
+import {
+  VenderRegister01,
+  VenderRegister02,
+  VenderRegister03,
+} from "./pages/VenderRegister";
 import { Vender, Vender01, Vender02, Vender03 } from "./pages/Vender";
 import {
   StoreInfotmation,
@@ -43,7 +46,7 @@ function App() {
           <Route path="2" element={<Vender02 />} />
           <Route path="2/register" element={<VenderRegister02 />} />
           <Route path="3" element={<Vender03 />} />
-          {/* <Route path="3/register" element={<VenderRegister03 />} /> */}
+          <Route path="3/register" element={<VenderRegister03 />} />
         </Route>
         <Route path="store-informaion" element={<StoreInfotmation />}>
           <Route path="1" element={<StoreInfotmation01 />} />

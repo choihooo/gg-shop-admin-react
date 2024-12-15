@@ -6,6 +6,7 @@ const RegisterDropdown = ({
   defaultLabel,
   onChange,
   isBlack = false,
+  defaultWidth = "134px",
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [selected, setSelected] = useState(defaultLabel);
@@ -35,7 +36,11 @@ const RegisterDropdown = ({
   }, []);
 
   return (
-    <div className={styles.dropdown} ref={dropdownRef}>
+    <div
+      className={styles.dropdown}
+      style={{ width: defaultWidth }}
+      ref={dropdownRef}
+    >
       <div
         className={styles.dropdownControl}
         onClick={toggleDropdown}
