@@ -1,0 +1,153 @@
+.modal {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modalContent {
+  width: 1000px;
+  height: 586px;
+  padding: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+.modalContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalTitle {
+  font-size: 24px;
+}
+
+.detailTable {
+  border-top: 0.5px solid #000000;
+  width: 800px;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+.detailTable th,
+.detailTable td {
+  border: none;
+  font-size: 16px;
+  font-weight: normal;
+  text-align: center;
+  border-bottom: 0.5px solid #ddd;
+}
+
+.detailTable th {
+  width: 120px;
+  height: 58px;
+  background-color: #eeeeee;
+}
+
+.detailTable td {
+  width: 280px;
+  height: 58px;
+  color: #808080;
+}
+
+.detailTable tr:last-child th:nth-child(3) {
+  background-color: inherit;
+  color: #808080;
+}
+
+.modalFooter {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  text-align: right;
+}
+
+.modalButton {
+  width: 80px;
+  height: 38px;
+  border: none;
+  border-radius: 19px;
+  background-color: #26a1f8;
+  color: white;
+  cursor: pointer;
+}
+
+.dottedLine {
+  border-top: 0.5px dotted #020202;
+  width: 100%;
+  margin: 30px 0;
+}
+
+.attachWrapper {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 10px;
+}
+
+.attachItem {
+  display: flex;
+  position: relative;
+  width: 640px;
+  justify-content: center;
+  align-content: center;
+}
+.attachItem label {
+  position: absolute;
+  top: 12px;
+  left: -110px;
+  min-width: 100px;
+  color: #333;
+  font-size: 14px;
+  text-align: right;
+}
+.fileUpload {
+  position: relative;
+  flex-grow: 1;
+}
+
+.fileInput {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 640px;
+  height: 40px;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.fileName {
+  display: flex;
+  width: 640px;
+  height: 40px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: inherit;
+  color: #808080;
+  font-size: 14px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.fileNameUploaded {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}

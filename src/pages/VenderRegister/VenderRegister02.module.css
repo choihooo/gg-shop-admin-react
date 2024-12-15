@@ -1,0 +1,307 @@
+.venderRegistration {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.title {
+  margin-top: 20px;
+  margin-bottom: 18px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.formWrapper {
+  display: flex;
+  width: 815px;
+  padding-left: 80px;
+  height: 367px;
+  margin: 0 auto;
+  margin-top: 20px;
+  flex-direction: column;
+  gap: 20px;
+}
+.formWrapper2 {
+  display: flex;
+  width: 834px;
+  height: 160px;
+  padding-left: 90px;
+  margin: 0 auto;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 16px;
+}
+
+.searchButton {
+  width: 80px;
+  height: 38px;
+  margin-left: 9px;
+  border-radius: 19px;
+  background-color: #26a1f8;
+  color: white;
+}
+.checkButton {
+  width: 65px;
+  height: 38px;
+  margin-left: 9px;
+  border-radius: 19px;
+  background-color: #26a1f8;
+  color: white;
+}
+.row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  gap: 6px;
+}
+.row input {
+  width: 330px;
+  height: 40px;
+  border: #757575 0.5px solid;
+  border-radius: 5px;
+}
+.formWrapper .row input {
+  height: 40px;
+  border: #757575 0.5px solid;
+  border-radius: 5px;
+}
+.formWrapper2 .row input {
+  width: 300px;
+  height: 40px;
+  border: #757575 0.5px solid;
+  border-radius: 5px;
+}
+.id input {
+  width: 220px;
+}
+.address input,
+.addressDetail input {
+  width: 581px;
+}
+
+.submitButton {
+  width: 641px;
+  height: 32px;
+  margin-top: 30px;
+  border-radius: 10px;
+  background-color: #26a1f8;
+  color: white;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.dottedLine {
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-top: 1px dotted #ccc;
+}
+
+.fileUpload {
+  position: relative;
+  flex-grow: 1;
+}
+
+.fileInput {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 640px;
+  height: 40px;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.fileName {
+  display: flex;
+  width: 640px;
+  height: 40px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: inherit;
+  color: #808080;
+  font-size: 14px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.fileNameUploaded {
+  color: blue;
+  cursor: pointer;
+}
+.pageWrapper {
+  width: 96%;
+  margin: 30px;
+  padding-bottom: 40px;
+  background-color: white;
+}
+
+.pageNavWrapper {
+  margin-top: 20px;
+}
+
+.radioGroup {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.radioItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+}
+
+.selectWrapper {
+  display: inline-block;
+  position: relative;
+  height: 40px;
+  font-size: 16px;
+}
+
+.customSelect {
+  width: 100%;
+  padding: 10px 40px 10px 12px;
+  border: #757575 solid 0.5px;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #757575;
+  font-family: inherit;
+  font-size: 16px;
+  appearance: none;
+}
+
+.flex.account {
+  display: flex;
+  width: 100%;
+  justify-content: start;
+  align-items: center;
+  gap: 6px;
+}
+
+.account input[type="text"] {
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+}
+
+.account .accountNum {
+  width: 437px;
+}
+
+.account .accountUser {
+  width: 144px;
+  padding-left: 10px;
+  font-size: 16px;
+}
+
+.attachWrapper {
+  width: 829px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 87px;
+  gap: 20px;
+}
+
+.attachItem {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 640px;
+}
+
+.attachLabel {
+  display: flex;
+  position: absolute;
+  top: 10px;
+  left: -130px;
+  width: 120px;
+  justify-content: end;
+}
+
+.fileUpload {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 640px;
+}
+
+.fileInput {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 640px;
+  height: 40px;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.fileNameUploaded {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 640px;
+  height: 40px;
+  overflow: hidden;
+  border: 1px solid #757575;
+  border-radius: 5px;
+  background-color: inherit;
+  color: #0000ff;
+  font-size: 14px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.fileNameUploaded:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.modalButtonSmall {
+  position: absolute;
+  margin-left: 10px;
+  width: 80px;
+  height: 38px;
+  border-radius: 19px;
+  top: 2px;
+  right: -100px;
+  background-color: #26a1f8;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.attach {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.registerWrapper {
+  background-color: white;
+  margin: 30px;
+  padding-bottom: 80px;
+}
+
+.formWrapper input {
+  border-radius: 5px;
+}

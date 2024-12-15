@@ -1,0 +1,76 @@
+.searchWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.filterWrapper {
+  display: flex;
+  width: 1140px;
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.filterItemGray {
+  width: 120px;
+  height: 24px;
+  border-bottom: 0.5px solid #808080;
+}
+
+.filterSelect {
+  width: 100%;
+  color: #808080;
+  font-size: 16px;
+}
+
+.filterSelectWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.filterSelectWrapper::after {
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  color: #808080;
+  font-size: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  content: "▼";
+}
+
+.filterInput {
+  width: 120px;
+  height: 24px;
+  border: none;
+  background-color: initial;
+  font-size: 16px;
+  border-bottom: #808080 solid 0.5px;
+  padding-bottom: 3px;
+  color: #808080;
+}
+.filterInput::placeholder {
+  color: #808080;
+}
+
+.searchItem {
+  position: relative;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 10px;
+}
+
+.button {
+  min-width: 90px;
+  height: 30px;
+  border-radius: 2px;
+  background-color: #26a1f8;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+}

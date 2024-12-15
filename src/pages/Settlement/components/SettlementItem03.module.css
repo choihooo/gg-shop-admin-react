@@ -1,0 +1,40 @@
+.settlementItem {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  font-size: 12px;
+  text-align: center;
+  padding: 0px 6px;
+  border-bottom: 0.5px dotted #808080;
+}
+
+.settlementColumn {
+  display: flex;
+  overflow: hidden;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  word-break: break-word;
+  text-overflow: ellipsis;
+}
+
+.columnXSmall {
+  width: 2%;
+}
+
+.columnSmall {
+  width: 4%;
+}
+
+.columnMedium {
+  width: 7%;
+}
+
+.columnLarge {
+  width: 10%;
+}
+
+.approvalNumber {
+  color: blue;
+  text-decoration: underline;
+}

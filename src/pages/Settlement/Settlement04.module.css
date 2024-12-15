@@ -1,0 +1,79 @@
+.settlementHeader {
+  display: flex;
+  top: 0;
+  height: 46px;
+  align-items: center;
+  background-color: #d9d9d9;
+  font-size: 12px;
+  text-align: center;
+  padding: 0px 6px;
+  margin-top: 20px;
+}
+
+.settlementColumn {
+  display: flex;
+  overflow: hidden;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  word-break: break-word;
+  text-overflow: ellipsis;
+}
+
+.columnXSmall {
+  width: 2%;
+}
+
+.columnSmall {
+  width: 4%;
+}
+
+.columnMedium {
+  width: 8%;
+}
+
+.columnLarge {
+  width: 10%;
+}
+
+.checkboxContainer {
+  display: inline-block;
+  position: relative;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.customCheckbox {
+  display: inline-block;
+  position: relative;
+  width: 16px;
+  height: 16px;
+  border: 1px solid black;
+  border-radius: 2px;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+.customCheckbox::after {
+  content: "";
+  position: absolute;
+  top: 32%;
+  left: 50%;
+  width: 8px;
+  height: 6px;
+  border: solid white;
+  border-width: 0 0 2px 2px;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  opacity: 0;
+}
+
+input[type="checkbox"]:checked + .customCheckbox {
+  border-color: black;
+  background-color: black;
+}
+
+input[type="checkbox"]:checked + .customCheckbox::after {
+  opacity: 1;
+}

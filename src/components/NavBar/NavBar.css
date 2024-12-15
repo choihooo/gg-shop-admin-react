@@ -1,0 +1,36 @@
+.nav {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  padding-left: 10px;
+  background-color: #d9d9d9;
+}
+
+.nav__button {
+  display: flex;
+  width: 191px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  background: none;
+  background-color: initial;
+  color: inherit;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.nav__button--active {
+  display: flex;
+  width: 191px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  background: none;
+  background-color: #26a1f8;
+  color: inherit;
+  color: #ffffff;
+  font-size: 18px;
+  cursor: pointer;
+}

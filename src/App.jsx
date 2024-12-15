@@ -1,35 +1,57 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Header, NavBar } from "./components";
+import Home from "./pages/Home";
+import {
+  Settlement,
+  Settlement01,
+  Settlement02,
+  Settlement03,
+  Settlement04,
+} from "./pages/Settlement";
+import PayList from "./pages/PayList/PayList";
+import WaitApproval from "./pages/WaitApproval/WaitApproval";
+import VenderRegister01 from "./pages/VenderRegister/VenderRegister01";
+import VenderRegister02 from "./pages/VenderRegister/VenderRegister02";
+import { Vender, Vender01, Vender02, Vender03 } from "./pages/Vender";
+import {
+  StoreInfotmation,
+  StoreInfotmation01,
+  StoreInfotmation02,
+} from "./pages/StoreInformation";
+import "./reset.css";
+import "./common.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <BrowserRouter>
+      <Header />
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="settlement" element={<Settlement />}>
+          <Route path="1" element={<Settlement01 />} />
+          <Route path="2" element={<Settlement02 />} />
+          <Route path="3" element={<Settlement03 />} />
+          <Route path="4" element={<Settlement04 />} />
+        </Route>
+        <Route path="/pay-list" element={<PayList />} />
+        <Route path="/wait-approval" element={<WaitApproval />} />
+        <Route path="vender" element={<Vender />}>
+          <Route path="1" element={<Vender01 />} />
+          <Route path="1/register" element={<VenderRegister01 />} />
+          <Route path="2" element={<Vender02 />} />
+          <Route path="2/register" element={<VenderRegister02 />} />
+          <Route path="3" element={<Vender03 />} />
+          {/* <Route path="3/register" element={<VenderRegister03 />} /> */}
+        </Route>
+        <Route path="store-informaion" element={<StoreInfotmation />}>
+          <Route path="1" element={<StoreInfotmation01 />} />
+          <Route path="2" element={<StoreInfotmation02 />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;

@@ -1,0 +1,27 @@
+.pageNavWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pageNav {
+  display: flex;
+  width: 1140px;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.pageNavButton {
+  display: inline-block;
+  width: 560px;
+  padding: 6px 0px;
+  border-radius: 2px;
+  background-color: #808080;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+}
+
+.pageNavButtonActive {
+  background-color: #26a1f8;
+}

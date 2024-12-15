@@ -1,0 +1,221 @@
+html {
+  min-width: 1455px;
+}
+
+.filter-bar {
+  display: flex;
+  margin-top: 40px;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.filter-item {
+  display: flex;
+  position: relative;
+  height: 40px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.filter-item-gray {
+  height: 40px;
+}
+.filter-item-gray .filter-select {
+  color: #808080;
+  border-bottom: 1px solid #808080;
+  font-size: 16px;
+}
+
+.filter-label {
+  color: #808080;
+  font-size: 14px;
+  font-weight: regular;
+}
+
+.filter-input {
+  width: 120px;
+  height: 30px;
+  padding: 4px 8px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  color: #333;
+  font-size: 14px;
+}
+
+.filter-select-wrapper {
+  position: relative;
+  width: 100px;
+}
+
+.filter-select {
+  position: relative;
+  width: 90px;
+  padding-right: 30px;
+  border-bottom: 1px solid black;
+  background-color: initial;
+  color: #333;
+  font-size: 16px;
+  appearance: none;
+}
+
+.filter-select-wrapper::after {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  color: #808080;
+  font-size: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  content: "▼";
+}
+
+.search-bar {
+  display: flex;
+  right: 0;
+  align-items: center;
+  gap: 20px;
+}
+
+.filter-input {
+  border: none;
+  background-color: initial;
+  border-bottom: #808080 solid 0.5px;
+}
+
+.search-item {
+  display: flex;
+  height: 40px;
+  flex-direction: column;
+  justify-content: end;
+  font-size: 16px;
+}
+
+.button-group {
+  display: flex;
+  gap: 20px;
+}
+
+.button--download {
+  width: 36px;
+}
+
+.date-input-wrapper {
+  position: relative;
+  width: 150px;
+  height: 40px;
+}
+
+.date-input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+
+  color: transparent;
+  font-size: 16px;
+  border-bottom: 0.5px solid #808080;
+  text-shadow: 0 0 0 transparent;
+
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.date-input.has-value {
+  padding-top: 24px;
+  color: #333;
+  text-shadow: none;
+}
+
+.placeholder-text {
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  color: #808080;
+  font-size: 16px;
+  pointer-events: none;
+  transition: 0.3s ease;
+}
+
+.date-input.has-value + .placeholder-text {
+  display: none;
+}
+
+.payment-list__wrapper {
+  max-height: 1080px;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+.payment-list__header {
+  display: flex;
+  top: 0;
+  z-index: 1;
+  height: 46px;
+  align-items: center;
+  background-color: #d9d9d9;
+  font-size: 14px;
+  text-align: center;
+}
+.payment-list__item {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  font-size: 14px;
+  text-align: center;
+  border-bottom: #808080 0.5px dotted;
+}
+.payment-list__header,
+.payment-list__item {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  text-align: center;
+}
+
+.payment-list__header {
+  top: 0;
+  z-index: 1;
+  height: 46px;
+  background-color: #d9d9d9;
+}
+
+.payment-list__column {
+  display: flex;
+  overflow: hidden;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  word-break: break-word;
+  text-overflow: ellipsis;
+}
+
+.payment-list__column-small {
+  width: 2.95%;
+}
+
+.payment-list__column-medium {
+  width: 3.56%;
+}
+
+.payment-list__column-large {
+  width: 5.2%;
+}
+
+.payment-list__column-extra-large {
+  width: 9.15%;
+}
+
+.payment-list__item button {
+  width: 72px;
+  height: 35px;
+  border: 0.5px solid #757575;
+  border-radius: 18px;
+  background-color: initial;
+  color: #757575;
+}

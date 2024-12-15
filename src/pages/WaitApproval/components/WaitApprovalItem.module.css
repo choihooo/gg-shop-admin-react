@@ -1,0 +1,46 @@
+.approvalItem {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  background-color: white;
+  font-size: 14px;
+  text-align: center;
+  border-bottom: #808080 0.5px dotted;
+}
+
+.detailButton {
+  width: 81px;
+  height: 36px;
+  border: 1px solid #5112ab;
+  border-radius: 18px;
+  background-color: inherit;
+}
+
+.approvalColumnID {
+  width: 76px;
+}
+
+.approvalColumnStore {
+  width: 166px;
+}
+
+.approvalColumnName {
+  width: 116px;
+}
+
+.approvalColumnDivision {
+  width: 132px;
+}
+
+.approvalColumnContact,
+.approvalColumnDate {
+  width: 188px;
+}
+
+.approvalColumnApprove {
+  width: 108px;
+}
+
+.columnDetail {
+  width: 158px;
+}

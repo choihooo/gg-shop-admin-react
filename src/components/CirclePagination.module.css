@@ -1,0 +1,52 @@
+.pagination {
+  display: flex;
+  margin-top: 40px;
+  padding-bottom: 59px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-bottom: none;
+}
+
+.paginationButton {
+  display: flex;
+  width: 36px;
+  height: 36px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 50%;
+  background-color: #f9f9f9;
+  color: #333;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.paginationNumber {
+  display: flex;
+  width: 32px;
+  height: 32px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #333;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.paginationNumber.active {
+  border-color: #d9d9d9;
+  background-color: #d9d9d9;
+  color: #000;
+}
+
+.paginationEllipsis {
+  display: flex;
+  width: 32px;
+  height: 32px;
+  justify-content: center;
+  align-items: center;
+  color: #aaa;
+  font-size: 14px;
+}

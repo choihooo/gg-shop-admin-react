@@ -1,0 +1,114 @@
+html {
+  max-height: 1080px;
+  overflow-x: auto;
+}
+
+*:not(body, html)::-webkit-scrollbar {
+  width: 20px;
+  background: #f1f1f1;
+  border-top: #808080 0.5px solid;
+}
+
+*:not(body, html)::-webkit-scrollbar-thumb {
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-radius: 4px;
+  background: #b6b6b6;
+  background-clip: padding-box;
+}
+
+*:not(body, html)::-webkit-scrollbar-button {
+  display: block;
+  height: 23px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+*:not(body, html)::-webkit-scrollbar-button:start:decrement {
+  background-image: url("../images/up.svg");
+}
+*:not(body, html)::-webkit-scrollbar-button:start:increment {
+  display: none;
+}
+
+*:not(body, html)::-webkit-scrollbar-button:end:increment {
+  background-image: url("../images/down.svg");
+}
+*:not(body, html)::-webkit-scrollbar-button:end:decrement {
+  display: none;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+}
+
+.pagination__arrow {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  color: #666;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.pagination__arrow:hover {
+  color: #333;
+}
+
+.pagination__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 8px;
+  list-style: none;
+}
+
+.pagination__item {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.pagination__item:hover {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.pagination__dots {
+  color: #999;
+  pointer-events: none;
+}
+
+.pagination {
+  height: 60px;
+  font-size: 20px;
+  border-bottom: 0.5px dotted #808080;
+}
+
+.pagination__arrow {
+  color: #757575;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  color: transparent;
+  cursor: pointer;
+}
