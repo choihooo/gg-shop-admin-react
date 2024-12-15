@@ -156,7 +156,7 @@ function DuplicatesSection() {
   ];
   return (
     <section className="content__section content__section--duplicates home shadow">
-      <h2 className="section__title">중복 및 초과 목록</h2>
+      <div className="section__title">중복 및 초과 목록</div>
       <div className="duplicates__wrapper">
         <div className="duplicates__header">
           <span className="header__item header__date">승인일시</span>

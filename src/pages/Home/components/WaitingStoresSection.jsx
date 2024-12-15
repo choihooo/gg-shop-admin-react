@@ -153,7 +153,7 @@ function WaitingStoresSection({}) {
   ];
   return (
     <section className="content__section content__section--waiting home shadow">
-      <h2 className="section__title">대기 상점</h2>
+      <div className="section__title">대기 상점</div>
       <div className="waiting__wrapper">
         <div className="waiting__header">
           <span className="waiting__header-id">ID</span>

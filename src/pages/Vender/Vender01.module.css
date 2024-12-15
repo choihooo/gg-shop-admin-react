@@ -15,7 +15,7 @@
   height: 60px;
   align-items: center;
   background-color: #eeeeee;
-  font-size: 14px;
+  font-size: 12px;
   text-align: center;
 }
 
@@ -40,7 +40,7 @@
   height: 60px;
   align-items: center;
   background-color: white;
-  font-size: 14px;
+  font-size: 12px;
   text-align: center;
   border-bottom: #808080 0.5px dotted;
 }

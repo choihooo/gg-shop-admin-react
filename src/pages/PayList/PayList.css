@@ -159,14 +159,14 @@ html {
   height: 46px;
   align-items: center;
   background-color: #d9d9d9;
-  font-size: 14px;
+  font-size: 12px;
   text-align: center;
 }
 .payment-list__item {
   display: flex;
   height: 60px;
   align-items: center;
-  font-size: 14px;
+  font-size: 12px;
   text-align: center;
   border-bottom: #808080 0.5px dotted;
 }
@@ -174,7 +174,7 @@ html {
 .payment-list__item {
   display: flex;
   align-items: center;
-  font-size: 14px;
+  font-size: 12px;
   text-align: center;
 }
 
@@ -214,8 +214,12 @@ html {
 .payment-list__item button {
   width: 72px;
   height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 0.5px solid #757575;
   border-radius: 18px;
   background-color: initial;
   color: #757575;
+  font-size: 12px;
 }
