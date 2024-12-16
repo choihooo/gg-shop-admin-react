@@ -18,7 +18,7 @@
   border-radius: 50%;
   background-color: #f9f9f9;
   color: #333;
-  font-size: 14px;
+  font-size: 12px;
   cursor: pointer;
 }
 
@@ -31,7 +31,7 @@
   border-radius: 50%;
   background-color: #fff;
   color: #333;
-  font-size: 14px;
+  font-size: 12px;
   cursor: pointer;
 }
 
@@ -48,5 +48,5 @@
   justify-content: center;
   align-items: center;
   color: #aaa;
-  font-size: 14px;
+  font-size: 12px;
 }

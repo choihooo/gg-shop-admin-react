@@ -54,7 +54,9 @@ function ModifyVenderModal03({ isOpen, onClose }) {
               </td>
             </tr>
             <tr>
-              <th>사업자 번호</th>
+              <th>
+                {selectedType == "사업자" ? "사업자 번호" : "주민등록번호"}
+              </th>
               <td>
                 <input
                   type="text"

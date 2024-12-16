@@ -6,7 +6,7 @@
   border: #808080 solid 0.5px;
   padding: 5px;
   border-radius: 2px;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .dropdownControl {
@@ -20,14 +20,14 @@
 
 .dropdownArrow {
   position: absolute;
-  right: 5px;
+  right: 4px;
   font-size: 12px;
   color: #666;
 }
 
 .dropdownMenu {
   position: absolute;
-  top: 120%;
+  top: 170%;
   left: 0;
   width: 100%;
   border-radius: 4px;

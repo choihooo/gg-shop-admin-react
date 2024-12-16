@@ -18,6 +18,7 @@ function VenderFilter() {
     <div className={styles.searchWrapper}>
       <div className={styles.filterWrapper}>
         <div className={styles.filterItemGray}>
+          <div className={styles.filterItemLabel}>&nbsp;</div>
           <Dropdown
             options={["소속사"]}
             defaultLabel="소속사"
@@ -25,6 +26,7 @@ function VenderFilter() {
           />
         </div>
         <div className={styles.filterItemGray}>
+          <div className={styles.filterItemLabel}>&nbsp;</div>
           <Dropdown
             options={["영업자"]}
             defaultLabel="영업자"
@@ -32,9 +34,10 @@ function VenderFilter() {
           />
         </div>
         <div className={styles.filterItemGray}>
+          <div className={styles.filterItemLabel}>항목선택</div>
           <Dropdown
-            options={["검색항목"]}
-            defaultLabel="검색항목"
+            options={["상점명", "대표명", "연락처"]}
+            defaultLabel="항목선택"
             onChange={handleDropdownChange}
           />
         </div>

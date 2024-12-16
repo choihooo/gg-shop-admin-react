@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./StoreInfotmationModal.module.css";
 
-function StoreInfotmationModal({ onClose }) {
+function StoreInfotmationModal({ onClose, isTerminate = false }) {
   return (
     <div className={styles.modal} onClick={onClose}>
       <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
@@ -16,7 +16,7 @@ function StoreInfotmationModal({ onClose }) {
             </tr>
             <tr>
               <th>구분</th>
-              <td>사업자</td>
+              <td>비사업자</td>
               <th>사업자 번호</th>
               <td>-</td>
             </tr>
@@ -52,10 +52,10 @@ function StoreInfotmationModal({ onClose }) {
         </div>
         <div className={styles.modalFooter}>
           <button className={styles.modalButton} onClick={onClose}>
-            승인
+            닫기
           </button>
           <button className={styles.modalButton} onClick={onClose}>
-            취소
+            {isTerminate ? "가맹점 해지취소" : "가맹점 해지"}
           </button>
         </div>
       </div>

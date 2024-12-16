@@ -1,19 +1,22 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import VenderFilter from "./components/VenderFilter";
 import VenderNav from "./components/VenderNav";
 import VendorItem from "./components/VenderItem";
 import styles from "./Vender01.module.css";
 import VenderModal02 from "./components/Vendor02/VenderModal02";
 import ModifyVenderModal02 from "./components/Vendor02/ModifyVenderModal02";
+import NonVenderModal02 from "./components/Vendor02/NonVenderModal02";
 import CirclePagination from "../../components/CirclePagenation";
 
 function Vender02() {
-  const [isModalOpen, setIsModalOpen] = useState(false); // 기본 모달 열림/닫힘 상태
-  const [isModifyModalOpen, setIsModifyModalOpen] = useState(false); // 수정 모달 열림/닫힘 상태
-  const [selectedItem, setSelectedItem] = useState(null); // 선택된 아이템
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isModifyModalOpen, setIsModifyModalOpen] = useState(false);
+  const [isNonMemberModalOpen, setIsNonMemberModalOpen] = useState(false);
+  const [selectedItem, setSelectedItem] = useState(null);
 
-  const items = [
+  const [items, setItems] = useState([
     {
+      No: "15",
       id: "000",
       store: "상점명",
       owner: "정복순",
@@ -22,6 +25,7 @@ function Vender02() {
       date: "2024-11-17 17:00",
     },
     {
+      No: "14",
       id: "001",
       store: "상점명",
       owner: "정복순",
@@ -29,25 +33,36 @@ function Vender02() {
       contact: "000-0000-0000",
       date: "2024-11-17 17:00",
     },
-  ];
+  ]);
+
+  useEffect(() => {
+    const sortedItems = [...items].sort((a, b) => b.No - a.No);
+    setItems(sortedItems);
+  }, []);
 
   const openModal = (item) => {
-    setSelectedItem(item); // 선택된 아이템 저장
-    setIsModalOpen(true); // 기본 모달 열기
+    setSelectedItem(item);
+    if (item.type === "비사업자") {
+      setIsNonMemberModalOpen(true);
+    } else {
+      setIsModalOpen(true);
+    }
   };
 
   const closeModal = () => {
-    setIsModalOpen(false); // 기본 모달 닫기
-    setSelectedItem(null); // 선택된 아이템 초기화
+    setIsModalOpen(false);
+    setIsNonMemberModalOpen(false);
+    setIsModifyModalOpen(false);
+    setSelectedItem(null);
   };
 
   const openModifyModal = () => {
-    setIsModalOpen(false); // 기본 모달 닫기
-    setIsModifyModalOpen(true); // 수정 모달 열기
+    setIsModalOpen(false);
+    setIsModifyModalOpen(true);
   };
 
   const closeModifyModal = () => {
-    setIsModifyModalOpen(false); // 수정 모달 닫기
+    setIsModifyModalOpen(false);
   };
 
   return (
@@ -57,6 +72,7 @@ function Vender02() {
       <section className={styles.section}>
         <div className={styles.wrapper}>
           <div className={styles.header}>
+            <span>No</span>
             <span>ID</span>
             <span>상점명</span>
             <span>대표자명</span>
@@ -78,7 +94,7 @@ function Vender02() {
         </div>
       </section>
       <CirclePagination />
-      {/* VenderModal02 */}
+
       {isModalOpen && (
         <VenderModal02
           isOpen={isModalOpen}
@@ -88,11 +104,18 @@ function Vender02() {
         />
       )}
 
-      {/* ModifyVenderModal02 */}
       {isModifyModalOpen && (
         <ModifyVenderModal02
           isOpen={isModifyModalOpen}
           onClose={closeModifyModal}
+        />
+      )}
+
+      {isNonMemberModalOpen && (
+        <NonVenderModal02
+          isOpen={isNonMemberModalOpen}
+          onClose={closeModal}
+          selectedItem={selectedItem}
         />
       )}
     </>

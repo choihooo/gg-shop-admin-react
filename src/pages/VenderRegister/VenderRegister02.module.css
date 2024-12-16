@@ -14,7 +14,7 @@
   display: flex;
   width: 815px;
   padding-left: 80px;
-  height: 367px;
+  height: 307px;
   margin: 0 auto;
   margin-top: 20px;
   flex-direction: column;
@@ -23,7 +23,7 @@
 .formWrapper2 {
   display: flex;
   width: 834px;
-  height: 220px;
+  height: 150px;
   padding-left: 90px;
   margin: 0 auto;
   flex-direction: column;
@@ -62,18 +62,18 @@
 }
 .row input {
   width: 330px;
-  height: 40px;
+  height: 27px;
   border: #757575 0.5px solid;
   border-radius: 5px;
 }
 .formWrapper .row input {
-  height: 40px;
+  height: 27px;
   border: #757575 0.5px solid;
   border-radius: 5px;
 }
 .formWrapper2 .row input {
   width: 300px;
-  height: 40px;
+  height: 27px;
   border: #757575 0.5px solid;
   border-radius: 5px;
 }
@@ -171,8 +171,11 @@
 .selectWrapper {
   display: inline-block;
   position: relative;
-  height: 40px;
+
   font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .customSelect {
@@ -231,7 +234,6 @@
 .attachLabel {
   display: flex;
   position: absolute;
-  top: 10px;
   left: -130px;
   width: 120px;
   justify-content: end;

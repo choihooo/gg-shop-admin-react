@@ -14,7 +14,7 @@
 
 .modalContent {
   width: 1000px;
-  height: 586px;
+  height: 386px;
   padding: 50px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
@@ -50,13 +50,13 @@
 
 .detailTable th {
   width: 120px;
-  height: 58px;
+  height: 30px;
   background-color: #eeeeee;
 }
 
 .detailTable td {
   width: 280px;
-  height: 58px;
+  height: 30px;
   color: #808080;
 }
 

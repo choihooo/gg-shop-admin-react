@@ -16,7 +16,7 @@ function WaitApprovalModal({ onClose }) {
             </tr>
             <tr>
               <th>구분</th>
-              <td>사업자</td>
+              <td>비사업자</td>
               <th>사업자 번호</th>
               <td>-</td>
             </tr>

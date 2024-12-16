@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./StoreInfotmationModalVender.module.css";
 
-function StoreInfotmationModalVender({ onClose }) {
+function StoreInfotmationModalVender({ onClose, isTerminate = false }) {
   return (
     <div className={styles.modal} onClick={onClose}>
       <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
@@ -65,10 +65,10 @@ function StoreInfotmationModalVender({ onClose }) {
         </div>
         <div className={styles.modalFooter}>
           <button className={styles.modalButton} onClick={onClose}>
-            승인
+            닫기
           </button>
           <button className={styles.modalButton} onClick={onClose}>
-            취소
+            {isTerminate ? "가맹점 해지취소" : "가맹점 해지"}
           </button>
         </div>
       </div>

@@ -9,6 +9,7 @@ function VendorItem({ item, onOpenModal }) {
   };
   return (
     <li className={styles.item}>
+      <span>{item.No}</span>
       <span>{item.id}</span>
       <span>{item.store}</span>
       <span>{item.owner}</span>

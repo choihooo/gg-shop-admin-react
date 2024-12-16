@@ -86,7 +86,7 @@ const VenderRegister03 = () => {
           <FormRow>
             <div className={styles.flex}>
               <label className={styles.attachLabel} htmlFor="identity-upload">
-                사업자번호
+                {selectedType == "사업자" ? "사업자 번호" : "주민등록번호"}
               </label>
               <input type="text" />
             </div>

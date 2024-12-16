@@ -13,6 +13,7 @@ function StoreInfotmationItem({ item, onOpenModal, isTermination = false }) {
 
   return (
     <li className={styles.item}>
+      <span className={textStyle}>{item.No}</span>
       <span className={textStyle}>{item.id}</span>
       <span className={textStyle}>{item.store}</span>
       <span className={textStyle}>{item.owner}</span>

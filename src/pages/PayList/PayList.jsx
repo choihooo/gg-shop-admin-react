@@ -229,7 +229,7 @@ function PaymentList() {
     },
   ];
   return (
-    <>
+    <div style={{ minWidth: "1600px" }}>
       <section className="content__section payment-list">
         <PayListFilter />
         <div className="payment-list__wrapper">
@@ -242,7 +242,7 @@ function PaymentList() {
         </div>
       </section>
       <Pagenation />
-    </>
+    </div>
   );
 }
 

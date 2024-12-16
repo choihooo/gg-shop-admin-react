@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./StoreInfotmation01.module.css";
 import StoreInfotmationModal from "./components/StoreInfotmationModal";
 import StoreInfotmationModalVender from "./components/StoreInfotmationModalVender";
@@ -26,8 +26,9 @@ function StoreInfotmation02() {
     setIsModalOpen(false);
     setSelectedItem(null);
   };
-  const items = [
+  const [items, setItems] = useState([
     {
+      No: "15",
       id: "000",
       store: "상점명",
       owner: "정복순",
@@ -36,6 +37,7 @@ function StoreInfotmation02() {
       date: "2024-11-17 17:00",
     },
     {
+      No: "14",
       id: "001",
       store: "상점명",
       owner: "정복순",
@@ -43,8 +45,11 @@ function StoreInfotmation02() {
       contact: "000-0000-0000",
       date: "2024-11-17 17:00",
     },
-  ];
-
+  ]);
+  useEffect(() => {
+    const sortedItems = [...items].sort((a, b) => b.No - a.No);
+    setItems(sortedItems);
+  }, []);
   return (
     <>
       <StoreInfotmationNav />
@@ -52,6 +57,7 @@ function StoreInfotmation02() {
       <section className={styles.section}>
         <div className={styles.wrapper}>
           <div className={styles.header}>
+            <span>No</span>
             <span>ID</span>
             <span>상점명</span>
             <span>대표자명</span>
@@ -78,10 +84,10 @@ function StoreInfotmation02() {
         (isVenderModal ? (
           <StoreInfotmationModalVender
             onClose={closeModal}
-            item={selectedItem}
+            isTerminate={true}
           />
         ) : (
-          <StoreInfotmationModal onClose={closeModal} item={selectedItem} />
+          <StoreInfotmationModal onClose={closeModal} isTerminate={true} />
         ))}
     </>
   );

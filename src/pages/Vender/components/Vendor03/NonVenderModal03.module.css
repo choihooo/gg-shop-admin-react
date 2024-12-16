@@ -13,8 +13,8 @@
 }
 
 .modalContent {
-  display: flex;
   margin-top: 500px;
+  display: flex;
   flex-direction: column;
   width: 1000px;
   padding: 50px 100px;
@@ -48,7 +48,7 @@
 }
 .detailTable th {
   width: 120px;
-  height: 58px;
+  height: 30px;
   background-color: #eeeeee;
 }
 
@@ -147,6 +147,9 @@
 
 .modalButtonSmall {
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-left: 10px;
   width: 80px;
   height: 38px;
@@ -157,9 +160,6 @@
   color: white;
   font-size: 14px;
   cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .modalFooter {
@@ -170,6 +170,9 @@
 }
 
 .modalButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 80px;
   height: 38px;
   border-radius: 19px;
@@ -177,66 +180,4 @@
   color: white;
   font-size: 14px;
   cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-input::placeholder {
-  color: black;
-}
-
-.radioGroup {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  color: black;
-}
-
-.radioItem {
-  display: flex;
-  gap: 5px;
-}
-
-.inputField {
-  border: solid 0.5px #808080;
-  padding: 8px;
-  width: 100%;
-  border-radius: 2px;
-  font-size: 16px;
-  color: black;
-}
-
-.searchButton {
-  padding: 8px 12px;
-  border: solid 0.5px #808080;
-  border-radius: 2px;
-  font-size: 16px;
-  background-color: #f5f5f5;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.colorPickerContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-}
-
-.colorBox {
-  width: 20px;
-  height: 20px;
-  border: 0.5px solid black;
-  cursor: pointer;
-}
-
-.colorInput {
-  border: 1px solid #808080;
-  padding: 8px;
-  border-radius: 2px;
-  font-size: 16px;
-  width: 120px;
 }

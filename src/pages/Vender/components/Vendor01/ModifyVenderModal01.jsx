@@ -64,7 +64,9 @@ function ModifyVenderModal01({ isOpen, onClose }) {
               </td>
             </tr>
             <tr>
-              <th>사업자 번호</th>
+              <th>
+                {selectedType == "사업자" ? "사업자 번호" : "주민등록번호"}
+              </th>
               <td>
                 <input
                   type="text"
@@ -250,7 +252,6 @@ function ModifyVenderModal01({ isOpen, onClose }) {
                     gap: "5px",
                   }}
                 >
-                  {/* 색상 선택기 */}
                   <div
                     style={{
                       width: "20px",
@@ -260,7 +261,6 @@ function ModifyVenderModal01({ isOpen, onClose }) {
                       cursor: "pointer",
                     }}
                   ></div>
-                  {/* 텍스트 입력 필드 */}
                   <input
                     type="text"
                     value={color}

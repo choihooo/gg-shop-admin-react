@@ -84,7 +84,7 @@ tbody {
   position: sticky;
   top: 0;
   z-index: 1;
-  height: 30px;
+  height: 38px;
   justify-content: flex-end;
   align-items: center;
   background-color: #f1f1f1;
@@ -94,14 +94,14 @@ tbody {
 .notice__header-title {
   display: flex;
   width: 62%;
-  height: 30px;
+  height: 38px;
   justify-content: center;
   align-items: center;
 }
 .notice__header-date {
   display: flex;
   width: 48%;
-  height: 30px;
+  height: 38px;
   justify-content: center;
   align-items: center;
 }
@@ -144,7 +144,6 @@ tbody {
   width: 24%;
   height: 30px;
 }
-
 .content__section--duplicates {
   grid-column-start: 1;
   grid-column-end: 3;
@@ -163,7 +162,7 @@ tbody {
   position: sticky;
   top: 0;
   z-index: 1;
-  height: 30px;
+  height: 38px;
   align-items: center;
   background-color: #f1f1f1;
   border-top: #808080 0.5px solid;
@@ -185,30 +184,33 @@ tbody {
 
 .header__date,
 .item__date {
-  width: 162px;
+  width: 17%;
   height: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .header__id,
 .header__shop-name,
 .item__id,
 .item__shop-name {
-  width: 91px;
+  width: 11%;
   height: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .header__amount,
 .item__amount {
-  width: 126px;
+  width: 13%;
   height: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .header__received,
 .header__installment,
 .header__exceeded,
@@ -217,7 +219,7 @@ tbody {
 .item__installment,
 .item__exceeded,
 .item__duplicate {
-  width: 107px;
+  width: 12%;
   height: 30px;
   display: flex;
   justify-content: center;
@@ -242,7 +244,6 @@ tbody {
 .table__data--canceled {
   width: 160px;
   padding: 4px;
-  height: 30px;
 }
 
 .waiting__wrapper {
@@ -255,7 +256,7 @@ tbody {
   position: sticky;
   top: 0;
   z-index: 1;
-  height: 30px;
+  height: 38px;
   align-items: center;
   background-color: #f1f1f1;
   font-size: 12px;
@@ -311,6 +312,11 @@ tbody {
   align-items: center;
 }
 
+.table__header--business,
+.waiting__header {
+  height: 38px;
+}
+
 .waiting__item-details button {
   width: 53%;
   border-radius: 10px;
@@ -318,7 +324,9 @@ tbody {
   background-color: #757575;
   color: white;
 }
-
+.table__header {
+  height: 38px;
+}
 @media screen and (max-width: 1180px) {
   .dashboard__content {
     padding: 10px;

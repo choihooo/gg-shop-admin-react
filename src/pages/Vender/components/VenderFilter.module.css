@@ -15,16 +15,11 @@
 
 .filterItemGray {
   width: 270px;
-  height: 24px;
+  height: 40px;
   border-bottom: 0.5px solid #808080;
 }
 .filterInput::placeholder {
   color: #808080;
-}
-.filterSelect {
-  width: 100%;
-  color: #808080;
-  font-size: 16px;
 }
 
 .filterSelectWrapper {
@@ -32,23 +27,13 @@
   width: 100%;
 }
 
-.filterSelectWrapper::after {
-  position: absolute;
-  top: 50%;
-  right: 0px;
-  color: #808080;
-  font-size: 10px;
-  transform: translateY(-50%);
-  pointer-events: none;
-  content: "▼";
-}
-
 .filterInput {
+  padding-top: 12px;
   width: 270px;
-  height: 24px;
+  height: 40px;
   border: none;
   background-color: initial;
-  font-size: 16px;
+  font-size: 14px;
   border-bottom: #808080 solid 0.5px;
 }
 
@@ -70,4 +55,9 @@
   font-size: 14px;
   text-align: center;
   cursor: pointer;
+}
+
+.filterItemLabel {
+  font-size: 12px;
+  color: #808080;
 }

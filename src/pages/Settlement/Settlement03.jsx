@@ -54,11 +54,31 @@ function Settlement03() {
             <span className={styles.columnMedium}>승인번호</span>
             <span className={styles.columnMedium}>승인금액</span>
             <span className={styles.columnMedium}>정산금액</span>
-            <span className={styles.columnMedium}>총 수수료</span>
-            <span className={styles.columnMedium}>본사 수수료</span>
-            <span className={styles.columnMedium}>사업자 수수료</span>
-            <span className={styles.columnMedium}>총판 수수료</span>
-            <span className={styles.columnMedium}>대리점 수수료</span>
+            <span className={styles.columnMedium}>
+              총 수수료
+              <br />
+              0,000
+            </span>
+            <span className={styles.columnMedium}>
+              본사 수수료
+              <br />
+              0,000
+            </span>
+            <span className={styles.columnMedium}>
+              사업자 수수료
+              <br />
+              0,000
+            </span>
+            <span className={styles.columnMedium}>
+              총판 수수료
+              <br />
+              0,000
+            </span>
+            <span className={styles.columnMedium}>
+              대리점 수수료
+              <br />
+              0,000
+            </span>
             <span className={styles.columnXSmall}>보류</span>
           </div>
 

@@ -13,11 +13,11 @@
 .pageNavButton {
   display: inline-block;
   width: 33.3%;
-  padding: 6px 0px;
+  padding: 8px 0px;
   border-radius: 2px;
   background-color: #808080;
   color: white;
-  font-size: 14px;
+  font-size: 12px;
   text-align: center;
 }
 

@@ -1,13 +1,13 @@
 import React from "react";
-import styles from "./NonVenderModal.module.css";
+import styles from "./NonVenderModal02.module.css";
 
-function NonVenderModal({ isOpen, onClose, onModify }) {
+function NonVenderModal02({ isOpen, onClose, onModify, selectedItem }) {
   if (!isOpen) return null;
 
   return (
     <div className={styles.modal} onClick={onClose}>
       <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
-        <div className={styles.modalTitle}>회원 상세정보</div>
+        <div className={styles.modalTitle}>사업자 상세정보</div>
         <table className={styles.detailTable}>
           <tbody>
             <tr>
@@ -17,7 +17,7 @@ function NonVenderModal({ isOpen, onClose, onModify }) {
               <td>비사업자</td>
             </tr>
             <tr>
-              <th>사업자 번호</th>
+              <th>주민등록번호</th>
               <td>00000000</td>
               <th>대표</th>
               <td>대표자명</td>
@@ -55,19 +55,13 @@ function NonVenderModal({ isOpen, onClose, onModify }) {
         <table className={styles.detailTable}>
           <tbody>
             <tr>
-              <th>사이트명</th>
+              <th>상위사업자</th>
               <td>duduri123</td>
-              <th>색상코드</th>
-              <td>#F77777</td>
+              <th>사업자 수수료</th>
+              <td>3.05%</td>
             </tr>
             <tr>
-              <th>로고(컬러)</th>
-              <td>로고(컬러).png</td>
-              <th>로고(흰색)</th>
-              <td>로고(컬러).png</td>
-            </tr>
-            <tr>
-              <th>사업자수수료</th>
+              <th>총판수수료</th>
               <td>3.05%</td>
               <th>상점 수수료</th>
               <td>3.87%</td>
@@ -99,6 +93,7 @@ function NonVenderModal({ isOpen, onClose, onModify }) {
               <button className={styles.modalButtonSmall}>수정</button>
             </div>
           </div>
+
           <div className={styles.attachItem}>
             <label className={styles.attachLabel} htmlFor="identity-upload">
               통장 사본
@@ -130,4 +125,4 @@ function NonVenderModal({ isOpen, onClose, onModify }) {
   );
 }
 
-export default NonVenderModal;
+export default NonVenderModal02;

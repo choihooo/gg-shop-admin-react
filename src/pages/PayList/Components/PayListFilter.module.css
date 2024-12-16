@@ -1,19 +1,19 @@
 .filterBar {
   display: flex;
-  flex-wrap: nowrap; /* 한 줄로 유지 */
+  flex-wrap: nowrap;
   margin-top: 20px;
   padding: 20px;
-  justify-content: space-between; /* 양쪽 정렬 */
-  align-items: center; /* 세로 가운데 정렬 */
-  gap: 20px; /* 요소 간 간격 */
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
 }
 
 .filterWrapper {
   display: flex;
-  flex-wrap: nowrap; /* 한 줄로 유지 */
+  flex-wrap: nowrap;
   align-items: center;
   gap: 20px;
-  width: auto; /* 필요 시 확장 */
+  width: auto;
 }
 .filterInput::placeholder {
   color: #808080;
@@ -41,7 +41,7 @@
 
 .filterLabel {
   color: #808080;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: regular;
 }
 
@@ -50,10 +50,10 @@
   height: 40px;
   border-radius: 4px;
   color: #333;
-  font-size: 16px;
+  font-size: 14px;
   background-color: transparent;
   vertical-align: bottom;
-  padding-top: 23px;
+  padding-top: 16px;
 }
 
 .searchItem {
@@ -88,11 +88,11 @@
 
 .searchBar {
   display: flex;
-  flex-wrap: nowrap; /* 한 줄로 유지 */
+  flex-wrap: nowrap;
   gap: 20px;
   align-items: center;
-  justify-content: flex-end; /* 오른쪽 정렬 */
-  width: auto; /* 필요 시 확장 */
+  justify-content: flex-end;
+  width: auto;
 }
 
 .buttonGroup {
@@ -130,7 +130,7 @@
   outline: none;
   background-color: transparent;
   color: transparent;
-  font-size: 16px;
+  font-size: 14px;
   border-bottom: 0.5px solid #808080;
   text-shadow: 0 0 0 transparent;
   -webkit-appearance: none;
@@ -138,17 +138,17 @@
 }
 
 .dateInputHasValue {
-  padding-top: 24px;
+  padding-top: 10px;
   color: #333;
   text-shadow: none;
 }
 
 .placeholderText {
   position: absolute;
-  bottom: 0;
+  bottom: 8px;
   left: 0px;
   color: #808080;
-  font-size: 16px;
+  font-size: 14px;
   pointer-events: none;
   transition: 0.3s ease;
 }
@@ -162,17 +162,9 @@
 }
 
 @media (max-width: 1800px) {
-  .filterBar {
-    flex-wrap: wrap; /* 줄바꿈 가능 */
-    justify-content: center; /* 세로 정렬 시 가운데 정렬 */
-    gap: 20px;
-  }
-
-  .filterWrapper,
-  .searchBar {
-    flex-wrap: wrap; /* 줄바꿈 가능 */
-    justify-content: center; /* 가운데 정렬 */
-    align-items: center;
-    width: 100%;
+  .filterItem,
+  .filterItemGray {
+    width: 100px;
+    height: 40px;
   }
 }

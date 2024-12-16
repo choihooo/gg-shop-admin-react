@@ -48,7 +48,7 @@
 }
 .detailTable th {
   width: 120px;
-  height: 58px;
+  height: 30px;
   background-color: #eeeeee;
 }
 
@@ -147,6 +147,9 @@
 
 .modalButtonSmall {
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-left: 10px;
   width: 80px;
   height: 38px;
@@ -167,6 +170,9 @@
 }
 
 .modalButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 80px;
   height: 38px;
   border-radius: 19px;

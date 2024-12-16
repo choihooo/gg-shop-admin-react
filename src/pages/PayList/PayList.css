@@ -1,5 +1,5 @@
 html {
-  min-width: 1455px;
+  min-width: 1600px;
 }
 
 .filter-bar {
@@ -34,8 +34,9 @@ html {
 
 .filter-label {
   color: #808080;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: regular;
+  height: 19.5px;
 }
 
 .filter-input {
