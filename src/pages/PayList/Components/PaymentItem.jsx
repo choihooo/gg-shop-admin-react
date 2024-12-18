@@ -62,6 +62,9 @@ function PaymentItem({ data }) {
         {data.headOfficeFee}
       </span>
       <span className="payment-list__column payment-list__column-large">
+        {data.venderFee}
+      </span>
+      <span className="payment-list__column payment-list__column-large">
         {data.distributorFee}
       </span>
       <span className="payment-list__column payment-list__column-large">

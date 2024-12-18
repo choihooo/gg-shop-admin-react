@@ -28,9 +28,12 @@
   margin-bottom: 20px;
   text-align: center;
 }
+.detailTable th:first-child {
+  border-top: none !important;
+}
 
 .detailTable {
-  border-top: 0.5px solid #000000;
+  border-top: 0.5px solid #808080;
   width: 800px;
   margin-top: 20px;
   border-collapse: collapse;
@@ -38,7 +41,7 @@
 
 .detailTable th,
 .detailTable td {
-  font-size: 16px;
+  font-size: 12px;
   text-align: center;
   border-bottom: 0.5px solid #808080;
   padding: 10px;
@@ -48,7 +51,7 @@
 }
 .detailTable th {
   width: 120px;
-  height: 58px;
+  height: 30px;
   background-color: #eeeeee;
 }
 
@@ -182,10 +185,6 @@
   align-items: center;
 }
 
-input::placeholder {
-  color: black;
-}
-
 .radioGroup {
   display: flex;
   gap: 20px;
@@ -203,10 +202,13 @@ input::placeholder {
   padding: 8px;
   width: 100%;
   border-radius: 2px;
-  font-size: 16px;
+  font-size: 12px;
   color: black;
 }
-
+.inputField::placeholder {
+  color: black;
+  font-size: 12px;
+}
 .searchButton {
   padding: 8px 12px;
   border: solid 0.5px #808080;
@@ -239,4 +241,7 @@ input::placeholder {
   border-radius: 2px;
   font-size: 16px;
   width: 120px;
+}
+.inputFieldWrapper {
+  padding: 3px 10px !important;
 }

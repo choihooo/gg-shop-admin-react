@@ -1,12 +1,12 @@
 .dropdown {
   position: relative;
-  height: 36px;
+  height: 31px;
   display: flex;
   align-items: center;
   border: #808080 solid 0.5px;
   padding: 5px;
   border-radius: 2px;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .dropdownControl {
@@ -27,7 +27,7 @@
 
 .dropdownMenu {
   position: absolute;
-  top: 170%;
+  top: 105%;
   left: 0;
   width: 100%;
   border-radius: 4px;

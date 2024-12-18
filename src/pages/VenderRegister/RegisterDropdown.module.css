@@ -3,10 +3,10 @@
   height: 27px;
   display: flex;
   align-items: center;
-  border: #808080 solid 1px;
+  border: #757575 solid 0.5px;
   padding: 5px;
   border-radius: 5px;
-  font-size: 14px;
+  font-size: 12px;
   width: 134px;
 }
 

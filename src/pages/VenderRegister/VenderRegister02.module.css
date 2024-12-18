@@ -19,6 +19,7 @@
   margin-top: 20px;
   flex-direction: column;
   gap: 20px;
+  font-size: 12px;
 }
 .formWrapper2 {
   display: flex;
@@ -28,7 +29,7 @@
   margin: 0 auto;
   flex-direction: column;
   gap: 20px;
-  font-size: 16px;
+  font-size: 12px;
 }
 
 .searchButton {
@@ -92,7 +93,7 @@
   border-radius: 10px;
   background-color: #26a1f8;
   color: white;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: normal;
 }
 
@@ -132,7 +133,7 @@
   border-radius: 5px;
   background-color: inherit;
   color: #808080;
-  font-size: 14px;
+  font-size: 12px;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
@@ -165,31 +166,21 @@
   justify-content: center;
   align-items: center;
   gap: 6px;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .selectWrapper {
   display: inline-block;
   position: relative;
 
-  font-size: 16px;
+  font-size: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.customSelect {
-  width: 100%;
-  padding: 10px 40px 10px 12px;
-  border: #757575 solid 0.5px;
-  border-radius: 5px;
-  background-color: #fff;
-  color: #757575;
-  font-family: inherit;
-  font-size: 16px;
-  appearance: none;
+.attachLabel {
+  font-size: 12px;
 }
-
 .flex.account {
   display: flex;
   width: 100%;
@@ -211,7 +202,7 @@
 .account .accountUser {
   width: 144px;
   padding-left: 10px;
-  font-size: 16px;
+  font-size: 12px;
 }
 
 .attachWrapper {
@@ -268,7 +259,7 @@
   border-radius: 5px;
   background-color: inherit;
   color: #0000ff;
-  font-size: 14px;
+  font-size: 12px;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
@@ -288,7 +279,7 @@
   right: -100px;
   background-color: #26a1f8;
   color: white;
-  font-size: 14px;
+  font-size: 12px;
   cursor: pointer;
 }
 

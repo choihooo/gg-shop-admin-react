@@ -9,14 +9,16 @@ thead {
   background-color: #eeeeee;
 }
 
-th {
+.dashboard__content th {
   font-size: 12px;
   font-weight: normal;
   border-top: 0.5px solid #808080;
   border-right: 0.5px solid #808080;
   text-align: center;
 }
-
+th {
+  font-weight: normal;
+}
 td {
   height: 30px;
   font-size: 12px;
@@ -348,4 +350,10 @@ tbody {
 .content__section--monthly-approval {
   min-height: 300px;
   max-height: 300px;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -67,71 +67,46 @@ function ModifyVenderModal01({ isOpen, onClose }) {
               <th>
                 {selectedType == "사업자" ? "사업자 번호" : "주민등록번호"}
               </th>
-              <td>
+              <td className={styles.inputFieldWrapper}>
                 <input
                   type="text"
                   placeholder="0000000"
-                  style={{
-                    border: "solid 0.5px #808080",
-                    padding: "8px",
-                    width: "100%",
-                    borderRadius: "2px",
-                    fontSize: "16px",
-                    color: "black",
-                  }}
+                  className={styles.inputField}
                 ></input>
               </td>
               <th>대표</th>
-              <td>
+              <td className={styles.inputFieldWrapper}>
                 <input
                   type="text"
                   placeholder="대표자명"
-                  style={{
-                    border: "solid 0.5px #808080",
-                    padding: "8px",
-                    width: "100%",
-                    borderRadius: "2px",
-                    fontSize: "16px",
-                    color: "black",
-                  }}
+                  className={styles.inputField}
                 ></input>
               </td>
             </tr>
             <tr>
               <th>연락처</th>
-              <td>
+              <td className={styles.inputFieldWrapper}>
                 <input
                   type="text"
                   placeholder="0000-0000-0000"
-                  style={{
-                    border: "solid 0.5px #808080",
-                    padding: "8px",
-                    width: "100%",
-                    borderRadius: "2px",
-                    fontSize: "16px",
-                    color: "black",
-                  }}
+                  className={styles.inputField}
                 ></input>
               </td>
               <th>Email</th>
-              <td>
+              <td className={styles.inputFieldWrapper}>
                 <input
                   type="text"
                   placeholder="duduri@naver.com"
-                  style={{
-                    border: "solid 0.5px #808080",
-                    padding: "8px",
-                    width: "100%",
-                    borderRadius: "2px",
-                    fontSize: "16px",
-                    color: "black",
-                  }}
+                  className={styles.inputField}
                 ></input>
               </td>
             </tr>
             <tr>
               <th>주소</th>
-              <td colSpan="3" className={styles.left}>
+              <td
+                colSpan="3"
+                className={`${styles.left} ${styles.inputFieldWrapper}`}
+              >
                 <div
                   style={{
                     display: "flex",
@@ -150,26 +125,12 @@ function ModifyVenderModal01({ isOpen, onClose }) {
                     <input
                       type="text"
                       placeholder="주소정보"
-                      style={{
-                        border: "solid 0.5px #808080",
-                        padding: "8px",
-                        width: "100%",
-                        borderRadius: "2px",
-                        fontSize: "16px",
-                        color: "black",
-                      }}
+                      className={styles.inputField}
                     ></input>
                     <input
                       type="text"
                       placeholder="상세주소정보"
-                      style={{
-                        border: "solid 0.5px #808080",
-                        padding: "8px",
-                        width: "100%",
-                        borderRadius: "2px",
-                        fontSize: "16px",
-                        color: "black",
-                      }}
+                      className={styles.inputField}
                     ></input>
                   </div>
                   <button className={styles.modalButton}>검색</button>
@@ -178,7 +139,10 @@ function ModifyVenderModal01({ isOpen, onClose }) {
             </tr>
             <tr>
               <th>계좌정보</th>
-              <td colSpan="3" className={styles.left}>
+              <td
+                colSpan="3"
+                className={`${styles.left} ${styles.inputFieldWrapper}`}
+              >
                 <div style={{ display: "flex", gap: "5px" }}>
                   <VenderDropdown
                     options={["은행명"]}
@@ -188,25 +152,14 @@ function ModifyVenderModal01({ isOpen, onClose }) {
                   <input
                     type="text"
                     placeholder="0000-0000-0000-0000"
-                    style={{
-                      border: "solid 0.5px #808080",
-                      padding: "8px",
-                      borderRadius: "2px",
-                      fontSize: "16px",
-                      color: "black",
-                      width: "420px",
-                    }}
+                    className={styles.inputField}
                   ></input>
                   <input
                     type="text"
                     placeholder="예금주명"
+                    className={styles.inputField}
                     style={{
-                      border: "solid 0.5px #808080",
-                      padding: "8px",
                       width: "120px",
-                      borderRadius: "2px",
-                      fontSize: "16px",
-                      color: "black",
                     }}
                   ></input>
                 </div>
@@ -228,22 +181,15 @@ function ModifyVenderModal01({ isOpen, onClose }) {
           <tbody>
             <tr>
               <th>사이트명</th>
-              <td>
+              <td className={styles.inputFieldWrapper}>
                 <input
                   type="text"
                   placeholder="사이트명"
-                  style={{
-                    border: "solid 0.5px #808080",
-                    padding: "8px",
-                    width: "100%",
-                    borderRadius: "2px",
-                    fontSize: "16px",
-                    color: "black",
-                  }}
+                  className={styles.inputField}
                 ></input>
               </td>
               <th>색상코드</th>
-              <td>
+              <td className={styles.inputFieldWrapper}>
                 <div
                   style={{
                     display: "flex",
@@ -266,10 +212,10 @@ function ModifyVenderModal01({ isOpen, onClose }) {
                     value={color}
                     onChange={handleTextChange}
                     style={{
-                      border: "1px solid #808080",
+                      border: "0.5px solid #808080",
                       padding: "8px",
                       borderRadius: "2px",
-                      fontSize: "16px",
+                      fontSize: "12px",
                       width: "120px",
                     }}
                   />
@@ -278,7 +224,7 @@ function ModifyVenderModal01({ isOpen, onClose }) {
             </tr>
             <tr>
               <th>로고(컬러)</th>
-              <td>
+              <td className={styles.inputFieldWrapper}>
                 <div
                   style={{
                     display: "flex",
@@ -292,7 +238,7 @@ function ModifyVenderModal01({ isOpen, onClose }) {
                 </div>
               </td>
               <th>로고(흰색)</th>
-              <td>
+              <td className={styles.inputFieldWrapper}>
                 <div
                   style={{
                     display: "flex",
@@ -308,7 +254,7 @@ function ModifyVenderModal01({ isOpen, onClose }) {
             </tr>
             <tr>
               <th>사업자수수료</th>
-              <td>
+              <td className={styles.inputFieldWrapper}>
                 <div
                   style={{
                     display: "flex",
@@ -320,20 +266,16 @@ function ModifyVenderModal01({ isOpen, onClose }) {
                   <input
                     type="text"
                     placeholder="3.05"
+                    className={styles.inputField}
                     style={{
-                      border: "solid 0.5px #808080",
-                      padding: "8px",
                       width: "200px",
-                      borderRadius: "2px",
-                      fontSize: "16px",
-                      color: "black",
                     }}
                   ></input>
                   <div>%</div>
                 </div>
               </td>
               <th>상점 수수료</th>
-              <td>
+              <td className={styles.inputFieldWrapper}>
                 <div
                   style={{
                     display: "flex",
@@ -345,13 +287,9 @@ function ModifyVenderModal01({ isOpen, onClose }) {
                   <input
                     type="text"
                     placeholder="3.05"
+                    className={styles.inputField}
                     style={{
-                      border: "solid 0.5px #808080",
-                      padding: "8px",
                       width: "200px",
-                      borderRadius: "2px",
-                      fontSize: "16px",
-                      color: "black",
                     }}
                   ></input>
                   <div>%</div>
@@ -360,7 +298,7 @@ function ModifyVenderModal01({ isOpen, onClose }) {
             </tr>
             <tr>
               <th>건당 결제한도</th>
-              <td>
+              <td className={styles.inputFieldWrapper}>
                 <div
                   style={{
                     display: "flex",
@@ -372,20 +310,16 @@ function ModifyVenderModal01({ isOpen, onClose }) {
                   <input
                     type="text"
                     placeholder="2,000,000"
+                    className={styles.inputField}
                     style={{
-                      border: "solid 0.5px #808080",
-                      padding: "8px",
                       width: "200px",
-                      borderRadius: "2px",
-                      fontSize: "16px",
-                      color: "black",
                     }}
                   ></input>
                   <div>원</div>
                 </div>
               </td>
               <th>할부 한도</th>
-              <td>
+              <td className={styles.inputFieldWrapper}>
                 <div
                   style={{
                     display: "flex",
@@ -397,13 +331,9 @@ function ModifyVenderModal01({ isOpen, onClose }) {
                   <input
                     type="text"
                     placeholder="6"
+                    className={styles.inputField}
                     style={{
-                      border: "solid 0.5px #808080",
-                      padding: "8px",
                       width: "200px",
-                      borderRadius: "2px",
-                      fontSize: "16px",
-                      color: "black",
                     }}
                   ></input>
                   <div>개월</div>

@@ -65,8 +65,8 @@ function Vender01() {
             <span>대표자명</span>
             <span>사업자 구분</span>
             <span>연락처</span>
-            <span>승인요청일시</span>
-            <span>승인여부</span>
+            <span>가입승인일시</span>
+            <span>로그인허용</span>
             <span>상세</span>
           </div>
           <ul className={styles.body}>

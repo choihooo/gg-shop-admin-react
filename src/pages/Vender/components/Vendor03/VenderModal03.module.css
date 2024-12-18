@@ -30,7 +30,7 @@
 }
 
 .detailTable {
-  border-top: 0.5px solid #000000;
+  border-top: 0.5px solid #808080;
   width: 800px;
   margin-top: 20px;
   border-collapse: collapse;
@@ -38,7 +38,7 @@
 
 .detailTable th,
 .detailTable td {
-  font-size: 16px;
+  font-size: 12px;
   text-align: center;
   border-bottom: 0.5px solid #808080;
   padding: 10px;
@@ -48,7 +48,7 @@
 }
 .detailTable th {
   width: 120px;
-  height: 58px;
+  height: 30px;
   background-color: #eeeeee;
 }
 
