@@ -11,19 +11,19 @@ function SummarySection() {
       canceled: "10",
     },
     {
-      content: "전일 결제 금액",
+      content: "금일 결제 금액",
       amount: "92,072,230",
       approved: "858",
       canceled: "10",
     },
     {
-      content: "전일 결제 금액",
+      content: "저번 달 결제 금액",
       amount: "92,072,230",
       approved: "858",
       canceled: "10",
     },
     {
-      content: "전일 결제 금액",
+      content: "이번 달 결제 금액",
       amount: "92,072,230",
       approved: "858",
       canceled: "10",
