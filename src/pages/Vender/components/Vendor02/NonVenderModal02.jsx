@@ -7,7 +7,7 @@ function NonVenderModal02({ isOpen, onClose, onModify, selectedItem }) {
   return (
     <div className={styles.modal} onClick={onClose}>
       <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
-        <div className={styles.modalTitle}>사업자 상세정보</div>
+        <div className={styles.modalTitle}>회원 상세정보</div>
         <table className={styles.detailTable}>
           <tbody>
             <tr>

@@ -234,18 +234,20 @@ tbody {
   grid-row-start: 3;
   grid-row-end: 4;
 }
+.summary__table .table__header {
+  height: 28px;
+}
 .summary__table {
   display: block;
-  max-height: 144px;
   overflow-x: hidden;
-  overflow-y: auto;
+  overflow-y: hidden;
 }
 .table__header--approved,
 .table__header--canceled,
 .table__data--approved,
 .table__data--canceled {
   width: 160px;
-  padding: 4px;
+  padding: 3px;
 }
 
 .waiting__wrapper {

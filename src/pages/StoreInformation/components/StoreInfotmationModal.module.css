@@ -42,7 +42,7 @@
 .detailTable th,
 .detailTable td {
   border: none;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: normal;
   text-align: center;
   border-bottom: 0.5px solid #ddd;
@@ -132,7 +132,7 @@
   border-radius: 5px;
   background-color: inherit;
   color: #808080;
-  font-size: 14px;
+  font-size: 12px;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
@@ -148,6 +148,6 @@
   left: -110px;
   min-width: 100px;
   color: #333;
-  font-size: 14px;
+  font-size: 12px;
   text-align: right;
 }
