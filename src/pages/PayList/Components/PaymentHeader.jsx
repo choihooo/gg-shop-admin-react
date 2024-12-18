@@ -55,7 +55,7 @@ function PaymentHeader() {
         본사 수수료
       </span>
       <span className="payment-list__column payment-list__column-large">
-        본사 수수료
+        사업자 수수료
       </span>
       <span className="payment-list__column payment-list__column-large">
         총판 수수료
